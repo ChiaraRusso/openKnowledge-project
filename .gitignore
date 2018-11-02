@@ -76,3 +76,7 @@ cradleHistoryService/history.sql
 *.swp
 .m2
 *.versionsBackup
+
+
+*.empty
+
