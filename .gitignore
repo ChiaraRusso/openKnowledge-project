@@ -1,0 +1,78 @@
+# Build directory #
+###################
+artifacts
+dist
+target
+**/target
+**/client*/target
+**/client*/src/main
+**/client/**/target
+**/keygenerator/target
+
+cradleHistoryService/history.sql
+
+#  Client files   #
+###################
+**/client/src
+**/client/target
+
+# Intellij files  #
+###################
+**/*.iml
+**/*.ipr
+**/*.iws
+**/*.ids
+**/.idea
+
+# NetBeans files  #
+###################
+**/nb-configuration.xml
+**/nbproject
+**/nbproject/private
+**/.springBeans
+
+#  Eclipse files  #
+###################
+**/.project
+**/.settings
+**/.classpath
+**/bin
+**/.externalToolBuilders
+**/.metadata
+.factorypath
+**/.factorypath
+
+#   Kate files    #
+###################
+.kateproject
+**/.kateproject.d/
+*.kate-swp
+
+# LibreOffice files #
+**/.~lock.*#
+
+#    OSX files    #
+###################
+**/.DS_Store
+
+#    Other File   #
+###################
+**/cradleCoreService/src/test/resources/sortedProperties/test_modified.properties
+**/cradleScripts/cradleInstaller/.m2/repository
+**/cradleScripts/cradleInstaller/log
+**/cradleScripts/cradleInstaller/output
+**/openstack-api/test-output/
+**/openstack-ui/src/main/webapp/META-INF/
+**/openstack-ui/src/main/webapp/WEB-INF/deploy/
+**/openstack-ui/src/main/webapp/WEB-INF/classes/
+**/openstack-ui/src/main/gwt-unitCache/
+**/openstack-ui/src/main/webapp/ui/
+**/openstack-ui/src/main/webapp/WEB-INF/lib/
+**/openstack-ui/.gwt/
+**/openstack-ui/deploy.sh
+**/test-output/
+**/nbactions.xml
+
+*.swp
+.m2
+*.versionsBackup
