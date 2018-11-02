@@ -1,11 +1,14 @@
 package persistence.model;
 
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table
+@Table( name = "user" )
 public class UserDBTO {
+
     @Id
+    @GeneratedValue
     private Integer idUser;
 
     private String firstnameUser;
@@ -23,6 +26,9 @@ public class UserDBTO {
     private String cityOfBirth;
 
     private String cityOfResidence;
+
+    private GroupDBTO group;
+
 
     public Integer getIdUser() {
         return idUser;
@@ -74,5 +80,12 @@ public class UserDBTO {
     }
     public void setCityOfResidence( final String cityOfResidence ) {
         this.cityOfResidence = cityOfResidence;
+    }
+
+    public GroupDBTO getGroupDBTO() {
+        return group;
+    }
+    public void setGroupDBTO( final GroupDBTO groupDBTO ) {
+        this.group = groupDBTO;
     }
 }
